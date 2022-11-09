@@ -11,7 +11,7 @@ import {
   IconExclamationCircle,
   IconUser,
   IconMenuFold,
-  IconMenuUnfold,
+  IconMenuUnfold, IconSafe
 } from '@arco-design/web-react/icon';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
@@ -52,6 +52,8 @@ function getIconFromKey(key) {
       return <IconUser className={styles.icon} />;
     default:
       return <div className={styles['icon-empty']} />;
+    case 'permission':
+        return <IconSafe className={styles.icon} />
   }
 }
 
