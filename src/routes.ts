@@ -162,6 +162,14 @@ export const routes: IRoute[] = [
         name: 'menu.permission.user',
         key: 'permission/user',
       },
+      {
+        name: 'menu.permission.role',
+        key: 'permission/role',
+      },
+      {
+        name: 'menu.permission.resource',
+        key: 'permission/resource',
+      },
     ],
   },
 ];
